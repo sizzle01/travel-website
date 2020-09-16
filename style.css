@@ -1,0 +1,78 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+/* Custom Properties, update these for your own design */
+
+:root {
+    --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-secondary: 'Source Code Pro', monospace;
+    --fw-reg: 300;
+    --fw-bold: 900;
+    --clr-light: #fff;
+    --clr-dark: #303030;
+    --clr-accent: #16e0bd;
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+    --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, .25), 0.125em 0.125em 0.25em rgba(0, 0, 0, .15);
+}
+
+@media (min-width: 800px) {
+     :root {
+        --fs-h1: 3.5rem;
+        --fs-h2: 3.75rem;
+        --fs-h3: 1.5rem;
+        --fs-body: 1.125rem;
+    }
+}
+
+.header {
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/headerpic.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 20px;
+    text-align: center;
+    color: var(--clr-light);
+}
+
+.header img {
+    width: 100px;
+    float: left;
+}
+
+.login-btn {
+    width: 100px;
+    padding: 8px 0;
+    outline: none !important;
+    border: 2px solid var(--clr-light);
+    border-radius: 50px;
+    background: transparent;
+    color: var(--clr-light);
+    float: right;
+}
+
+.header h1 {
+    padding-top: 200px;
+    padding-bottom: 0;
+    font-size: var( --fs-h1);
+}
+
+.header p {
+    margin: 18px 0;
+}
+
+.input-group {
+    width: 90%;
+    max-width: 500px;
+    border-radius: 30px;
+    background: var(--clr-light);
+    margin: auto;
+    padding: 0.5em;
+}

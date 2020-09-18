@@ -70,7 +70,7 @@
 }
 
 .input-group {
-    width: 90%;
+    width: 90% !important;
     max-width: 500px;
     border-radius: 30px;
     background: var(--clr-light);
@@ -161,6 +161,11 @@
     margin-bottom: 1.875em;
 }
 
+.feature-box i {
+    margin-left: 25px;
+    margin-bottom: 40px;
+}
+
 
 /*GALLERY*/
 
@@ -238,8 +243,8 @@
 }
 
 .user-review {
-    box-shadow: 0 0 0px rgba(0, 0, 100, 0.2);
-    padding-bottom: 50px;
+    text-align: center;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 100, 0.2);
 }
 
 .user-review p {
@@ -251,5 +256,43 @@
     height: 60px;
     border-radius: 50%;
     position: relative;
-    margin: -30px 0 20px 40%;
+    margin: auto;
+    top: 25px;
+}
+
+
+/*FOOTER FOOTER*/
+
+.footer {
+    padding: 100px 20px 20px;
+    background-image: linear-gradient( var(--clr-accent), var(--clr-dark));
+    color: var(--clr-light);
+}
+
+.footer-logo {
+    width: 100px;
+    height: 50px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.footer h4 {
+    text-align: left;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.footer p {
+    font-size: 12px;
+    text-align: justify;
+    padding-right: 35px;
+}
+
+.footer .row .fa {
+    padding-right: 20px;
+    font-size: 15px;
+}
+
+.footer hr {
+    background: var(--clr-light);
 }
